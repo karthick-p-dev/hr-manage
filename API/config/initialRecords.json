@@ -1,0 +1,56 @@
+{
+	"users": [
+		{
+			"firstName": "Super",
+			"lastName": "Admin",
+			"userName": "superadmin",
+			"email": "hrm@greatinnovus.com",
+			"password": "super@12345",
+			"mobile": "9876543232",
+			"employeeId": 0,
+			"DOB": "01.02.2022",
+			"gender": "Male",
+			"roleId": 1,
+			"companyId": 1,
+			"designation": "superadmin",
+			"createdAt" : "2022-03-15 13:31:02.123+05:30",
+			"updateddAt" : "2022-03-15 13:31:02.123+05:30",
+			"status": true
+				
+		}
+	],
+	"positions" : [
+		{
+			"name": "CEO",
+			"topPosition" : 1,
+			"companyId" : 1,
+			"parentId" : 0,
+			"createdBy" : 1,
+			"updatedBy" : 1,
+			"status" : 0,
+			"updatedAt" : "2022-03-15 13:31:02.123+05:30",
+			"createdAt": "2022-03-15 13:31:02.123+05:30",
+			"updateddAt": "2022-03-15 13:31:02.123+05:30",
+			"permissionJson"  : ""
+		}
+	],
+	"roles":[
+		{
+			"roleName": "superadmin",
+				"createdAt": "2022-03-15 13:31:02.123+05:30",
+				"updateddAt": "2022-03-15 13:31:02.123+05:30"
+		},
+		{
+			"roleName": "admin",
+				"createdAt": "2022-03-15 13:31:02.123+05:30",
+				"updateddAt": "2022-03-15 13:31:02.123+05:30"
+		},
+		{
+			"roleName": "employees",
+				"createdAt": "2022-03-15 13:31:02.123+05:30",
+				"updateddAt": "2022-03-15 13:31:02.123+05:30"
+		}
+	]
+
+	
+}

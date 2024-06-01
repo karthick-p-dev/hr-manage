@@ -1,0 +1,56 @@
+import express from "express";
+import _ from "lodash";
+const router = express.Router(); // eslint-disable-line new-cap
+import authRoutes from "./auth.route";
+import userRoutes from "./user.route";
+import rolesRoutes from "./roles.route";
+import attendanceRoutes from "./attendance.route";
+import companyRoutes from "./company.route";
+import leaveroute from "./leave.route";
+import seckeycontoller from "./seckey.route";
+import holidaycontoller from "./holiday.route";
+import informationController from "./information.route";
+import faceroute from "./face.route";
+import deviceController from "./device.route";
+import teamsController from "./teams.route";
+import projectsController from "./projects.route";
+import tasktypeController from "./tasktype.route";
+import taskController from "./task.route";
+import teamUserController from "./teamusers.route";
+import sprintsController from "./sprints.route";
+import timeSheetController from "./timesheet.route";
+import taskStatusController from "./taskStatus.route";
+import positionController from "./positions.route";
+import timesheetDetailsController from "./timsheetdetails.route";
+import requestedLeavesController from "./requestedLeaves.route";
+import projectUsersController from './projectUsers.route';
+import LoginLocationController from './loginLocation.route';
+router.get("/health-check", (req, res) => {
+	res.send("OK!!!");
+});
+router.use("/users", userRoutes);
+router.use("/auth", authRoutes);
+router.use("/roles", rolesRoutes);
+router.use("/attendance", attendanceRoutes);
+router.use("/company", companyRoutes);
+router.use("/leave", leaveroute);
+router.use("/seckey", seckeycontoller);
+router.use("/holiday", holidaycontoller);
+router.use("/information", informationController);
+router.use("/face", faceroute);
+router.use("/device", deviceController);
+router.use("/teams", teamsController);
+router.use("/projects", projectsController);
+router.use("/tasktype", tasktypeController);
+router.use("/task", taskController);
+router.use("/teamuser", teamUserController);
+router.use("/timesheet", timeSheetController);
+router.use("/sprints", sprintsController);
+router.use("/taskStatus", taskStatusController);
+router.use("/position", positionController);
+router.use("/timesheetDetails", timesheetDetailsController);
+router.use("/requestedLeaves", requestedLeavesController);
+router.use("/projectuser", projectUsersController);
+router.use('/loginLocation',LoginLocationController)
+
+export default router;

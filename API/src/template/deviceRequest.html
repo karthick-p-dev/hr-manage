@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Mailer</title>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<link rel="stylesheet" href="css/style.css" />
+
+		<style>
+			body {
+				margin: 0px;
+				padding: 0px;
+				font-family: sans-serif;
+			}
+
+			.whole-container {
+				width: 100%;
+				height: auto;
+			}
+
+			.container {
+				width: 80%;
+				margin: 0px auto;
+				height: auto;
+			}
+
+			.top-header {
+				background: #0a6b1f;
+				height: 70px;
+				border-radius: 0px 0px 20px 20px;
+				text-align: center;
+			}
+
+			.btn {
+				background: #0a6b1f;
+				border: none;
+				color: #fff;
+				padding: 8px 23px;
+				border-radius: 7px;
+				font-size: 18px;
+				font-weight: bold;
+				letter-spacing: 1px;
+			}
+
+			.bigtext {
+				background: #ffffff00;
+				border: none;
+				color: #fff;
+				padding: 20px 23px;
+				border-radius: 7px;
+				font-size: 25px;
+				font-weight: bold;
+				letter-spacing: 1px;
+				align-items: center;
+			}
+
+			p {
+				line-height: 27px;
+			}
+
+			table,
+			th,
+			td {
+				border: 1px solid black;
+				padding: 10px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="whole-container">
+			<div class="top-header">
+				<p class="bigtext">Device Request Form</p>
+			</div>
+			<div class="container">
+				<br />
+				<br />
+				<table style="width: 100%">
+					<tr>
+						<th>Title</th>
+						<th>Value</th>
+					</tr>
+					<tr>
+						<td>Name</td>
+						<td>{{name}}</td>
+					</tr>
+					<tr>
+						<td>Email</td>
+						<td>{{email}}</td>
+					</tr>
+					<tr>
+						<td>Status</td>
+						<td>{{status}}</td>
+					</tr>
+				</table>
+				<!-- <p>Approvel link: <a href="http://1da6-202-170-204-207.ngrok.io/leave/approveRequest/"{{id}}>Approve</a></p> -->
+			</div>
+		</div>
+	</body>
+</html>

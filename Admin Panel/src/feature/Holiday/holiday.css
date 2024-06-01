@@ -1,0 +1,40 @@
+.MuiCardContent-root.css-ch7tlc-MuiCardContent-root
+{
+    margin-right: 0px!important;
+    margin-left: 40px;
+}
+.ml0
+{
+    margin-left: 0px!important;
+}
+.MuiCardContent-root.css-ch7tlc-MuiCardContent-root button
+{
+ float: right;
+}
+.MuiGrid-root.MuiGrid-container.MuiGrid-spacing-xs-1
+{
+    margin: 20px;
+    /* display: block!important; */
+}
+.justify-content-around .MuiGrid-root.MuiGrid-item
+{
+    justify-content: flex-end!important;
+    display: flex;
+    /* margin-right: 24px; */
+}
+.MuiBox-root
+{
+    width: 100%;
+}
+.MuiCardContent-root > div{width: 100%!important;}
+.al-flx-start
+{
+    align-items: flex-start;
+}
+.mtm95
+{
+    margin-top: -95px!important;
+}
+.al-c{align-items: baseline;}
+
+.MuiCardContent-root > div{width: 100%!important;}

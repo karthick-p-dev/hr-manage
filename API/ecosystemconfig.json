@@ -1,0 +1,8 @@
+{
+    "apps": [
+        {
+            "name": "HR Manage",
+            "script": "./node_modules/.bin/gulp serve"
+        }
+    ]
+}
